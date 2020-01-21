@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 const routes: Routes = [
-  {path: '', pathMatch: 'full', redirectTo: 'signin'},
+  {path: '', pathMatch: 'full', redirectTo: 'auth'},
   {path: 'auth', loadChildren: () => import('./pages/auth/auth.module').then(m => m.AuthModule)},
   {path: 'video', loadChildren: () => import('./pages/video/video.module').then(m => m.VideoModule) },
   {path: 'playlists', loadChildren: () => import('./pages/playlists/playlists.module').then(m => m.PlaylistsModule) },
